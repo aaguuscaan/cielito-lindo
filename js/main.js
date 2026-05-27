@@ -1,6 +1,11 @@
 // ============================================================
 // MAIN.JS — Lógica principal del sitio Cielito Lindo
 // ============================================================
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+const db = firebase.firestore();
+const storage = firebase.storage();
 
 // ── Init ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
